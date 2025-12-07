@@ -19,7 +19,7 @@ os.makedirs(GENERATED_FOLDER, exist_ok=True)
 GENERATOR_WEIGHTS = "cyclegan_G_CT2MRI_epoch50.ckpt"
 
 # openai api key
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "" #fulfill by your openai api key
 
 app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
@@ -643,3 +643,4 @@ def generate():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
+
