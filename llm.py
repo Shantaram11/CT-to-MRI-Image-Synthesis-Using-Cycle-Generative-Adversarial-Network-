@@ -7,7 +7,7 @@ import os
 def get_LLM_Answer(prompt, image1_description, image2_description):
     ##########################################
     # No need to change anything in this part
-    API_KEY = "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"
+    API_KEY = "" # fulfill by your openai api key
     client = OpenAI(api_key=API_KEY)
     ############################################
 
@@ -296,4 +296,5 @@ Do not provide any clinical diagnosis or mention specific diseases. Focus only o
     Quality Check: Verify that the model has correctly learned the non-linear mapping from Electron Density (CT) to Proton Relaxation (MRI).
     """
     result = get_LLM_Answer(system_prompt, desc_img_1, desc_img_2)
+
     print(result)
